@@ -1,0 +1,145 @@
+body {
+  font-family: 'Encode Sans Semi Expanded', sans-serif;
+}
+h1{
+  font-size:32px;
+}
+h2{
+  font-size:24px;
+}
+ p{
+  font-size:20px;    
+}
+
+/* Quiz page container */
+.container{
+  background-color: #f0eff2;
+  margin: auto 100px;
+  border: 1px solid #ccc7d6;
+  filter: drop-shadow(6px 5px 4px rgba(126, 106, 133, 0.2));
+}
+
+/* High score page container */
+.scoreHolder{
+  padding:20px;
+}
+
+/* Quiz header banner holder */
+.quiz-header {
+  display: flex;
+  flex-wrap: nowrap;
+	justify-content: space-between;
+  background-color:#ccc7d6;
+  text-align: center;
+}
+.scores {
+  flex-basis: 40%;
+  padding: 10px;
+  height: 30px;
+  background-color: #a95d8c;
+  font-size:20px;
+  color:#ffffff;
+  text-decoration: none;
+  transition: color 0.1s;
+  cursor: pointer; 
+}
+.scores:hover {
+  background-color: #973772;
+}
+.timer {
+  flex-basis: 40%;
+  padding: 10px;
+  height: 30px;
+  background-color: #a95d8c;
+  font-size:20px;
+  color:#ffffff;
+}
+
+#start-screen, #end-screen{
+  padding:5%;
+}
+
+/* Start and Submit button */
+#start, #submit{
+  padding:15px;
+  width:150px;
+  text-align: center;
+}
+
+/* Play Again and Clear button */
+#playAgain, #clear{
+  padding:15px;
+  width:200px;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.start {
+  text-align: center;
+}
+
+/* Feedback box styling */
+.feedback {
+  font-size: 24px;
+  background-color: #e5dcf6;
+  padding:20px;
+}
+
+#questions {
+  padding: 10px;
+}
+
+button {
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color:#9281de;
+  border: 0px;
+  padding: 10px;
+  color: white;
+  transition: background-color 0.1s;
+  width: 100%;
+  text-align: left;
+}
+button:hover {
+  background-color: #8159d1;
+}
+
+.choices button {
+  display: block;
+}
+
+input[type="text"] {
+  font-size: 20px;
+}
+
+/* Highscore list styling */
+ol {
+  padding-left: 0px;
+  max-height: 400px;
+  overflow: auto;
+}
+li {
+  padding: 5px;
+  list-style: decimal inside none;
+}
+li:nth-child(odd) {
+  background-color: #dfdae7;
+}
+
+/* Media query for small screens */
+@media all and (max-width: 600px) {
+  .container{
+    margin:5px 5px;
+  }
+  .quiz-header {
+    flex-flow: column wrap;
+    
+  }
+  .scores, .timer { 
+    margin: 5px;
+  }
+}

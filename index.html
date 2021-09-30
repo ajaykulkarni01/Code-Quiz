@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>:: Code Quiz ::</title>
+
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Expanded&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="quiz-header">
+
+      <div class="scores" onclick="window.location='score.html'">View Highscores</div>
+      <div class="timer">Time: <span id="time">0</span></div>
+
+    </div>
+
+    <div class="quiz-body">
+
+      <div id="start-screen" class="start">
+        <h1>Code Quiz Game</h1>
+        <p>
+          This is a coding game. You will see some code-related questions. <br><br>
+          Finish the quiz as quickly as possible to achive the Highscore. But remember each incorrect answer will result in a 10 second score/time penalty.<br><br>
+          Don't panic!!! You can re-play as much as you want. All the best 👍
+        </p>
+        <button id="start">Start</button>
+      </div>
+
+      <div class="quizBg">
+        <div id="questions" class="hide">
+          <h2 id="question-title"></h2>
+          <div id="choices" class="choices"></div>
+        </div>
+        <div id="feedback" class="feedback hide"></div>
+      </div>
+
+      <div id="end-screen" class="hide">
+        <h2>Thank you for playing!</h2>
+        <p>Your final score is <span id="final-score"></span>.</p>
+        <p>
+          Enter your name: <input type="text" id="name" max="3" />
+        </p>
+        <p><button id="submit">Submit</button></p>
+      </div>
+
+
+    </div>
+  </div>
+  <script src="./js/questions.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
